@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #cfd9df, #141e30, #c3cfe2);
+}
+
+.container {
+    height: 58%;
+    width: 30%;
+    position: relative;
+    top: 10%;
+}
+
+.container p {
+    color: wheat;
+    word-break: keep-all;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px #ff0000;
+    font-weight: bold;
+    font-size: 40px;
+}
+.container p span
+{
+    cursor: pointer;
+}
+.container p span:hover
+{
+    color: black;
+    text-shadow: none;
+    background-color: rgb(70, 132, 238);
+}
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 31% 31% 33%;
+    background-color: black;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid-item {
+    margin: 6px;
+    border: 1px dotted wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.grid-item:hover {
+    cursor: pointer;
+}
+
+.cross {
+    color: #d80e0ed1;
+    font-size: inherit;
+    font-weight: bolder;
+}
+
+.circle {
+    color: #ebcf06ab;
+    font-size: inherit;
+    font-weight: bolder;
+}
+
+.win-box {
+    color: white;
+    background: linear-gradient(45deg, #000428, #004e92);
+    font-size: 40px;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+/* 878 */
+@media (max-width :876px) {
+    .container p {
+        font-size: 25px;
+    }
+    .container {
+        height: 58%;
+        width: 35%;
+        position: relative;
+        top: 10%;
+    }
+    .grid-container {
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+    .grid-item {
+        font-size: 2.5rem;
+    }
+    .win-box {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width :471px) {
+    .container p {
+        font-size: 20px;
+    }
+    .container {
+        height: 62%;
+        width: 55%;
+        position: relative;
+        top: 10%;
+    }
+    .grid-container {
+        column-gap: 7px;
+        row-gap: 7px;
+    }
+    .grid-item {
+        font-size: 2rem;
+    }
+}
